@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: aliceblue;
+}
+a{
+    text-decoration: none;
+}
+.box{
+    width:300px;
+	box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+	border-radius: 10px;
+	overflow: hidden;
+    margin: 25px;
+
+  
+
+}
+.slider{
+    position: relative;
+    height: 420px;
+}
+.slider img{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    object-fit: cover;
+}
+.details{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.type{
+    display: flex;
+    flex-direction: column;
+}
+.type a{
+    color: black;
+    padding: 2px;
+    margin: 5px 0;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+    font-style:italic ;
+    }
+.type span{
+    color: grey;
+    margin: 3px 0;
+    letter-spacing: 0.3px;
+    font-weight: medium;
+    font-style: normal;
+}
+.price{
+    color: black;
+    letter-spacing: 0.4px;
+    font-weight :bolder; 
+}
+.overlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(92,95,236,0.6);
+    display: flex;
+   align-items: center;
+  justify-content: center;
+    transform: translate(-50%,-50%);
+    visibility: hidden;
+}
+.btn{
+    height:40px ;
+    width: 140px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+	color:#252525;
+    font-style: oblique;
+    align-items: center;
+    font-weight: medium;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+   
+}
+.btn:hover{
+    color:#FFFFFF;
+	background-color: #f15fa3;
+	transition: all ease 0.3s;
+}
+.slider:hover .overlay{
+visibility: visible;
+animation: fade 1s;
+}
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100;
+    }
+}
+.sliding{
+    width:100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/*.nav-bar{
+    width: 100%;
+    height: 10vh;
+    background-color:#f8bbd0;
+}
+
+    
+
+
+.nav-bar ul{
+color: #252525;
+float: right;
+margin-right: 7px;
+background: transparent;
+}
+.nav-bar ul li{
+    color: #252525;
+    display: inline-block;
+ padding: 6px 13px;
+   margin: 25px;
+align-items: center;
+border-radius: 4px;
+
+  
+
+}
+.nav-bar ul li:hover{
+background-color: #f48fb1;
+color: #ec407a;
+}
+.head{
+    color: #ec407a;
+    font-style: italic;
+    font-weight: bold;
+    align-items: center;
+    width: 20%;
+    margin-top: 5px;
+    margin: 5px;
+    background-color:transparent ;
+}
+*/
